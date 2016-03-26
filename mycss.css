@@ -1,0 +1,46 @@
+body {
+    color : blue;
+    background : pink;
+}
+table {
+    background : violet;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+/* Define animation with custom name - example */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+th {
+    border: dotted 5px yellow;
+    animation: example 2s linear infinite;
+}
+
+td {
+    font-family: "Lucida Console", monospace;
+    border: ridge 2px cyan;
+}
+
+.nina-row {
+    background: lightgrey;
+}
+.vladi-row {
+    background: darkgrey;
+}
+
+#row-name {
+    font-weight: bold;
+}
+
+/* Define animation with custom name - blinker */
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
+
+#row-name {
+    animation: blinker 1s linear infinite;
+}
